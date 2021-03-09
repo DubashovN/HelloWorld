@@ -1,5 +1,5 @@
 
-public class generateIntegers {
+public class GenerateIntegers {
     public static int[] generateRandomInt(int n){
         int []array = new int[n];
         for (int i = 0; i < array.length; i++) {
