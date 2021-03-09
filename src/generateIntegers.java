@@ -8,7 +8,24 @@ public class generateIntegers {
         return array;
     }
 
-    public static 
+    public static void squareRoot(int[] ints){
+        int a;
+        for (int i = 0; i < ints.length; i++) {
+            if (isNegative(ints [i])){
+                throw new ArithmeticException();
+            }
+            a = (int) Math.sqrt(ints[i]);
+
+        }
+    }
+
+    public static boolean isNegative(int i){
+        boolean b = false;
+        if (i < 0){
+            b = true;
+        }
+        return b;
+    }
 
     public static void main(String[] args) {
         int [] array = generateRandomInt(20);
